@@ -44,6 +44,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    restart: unless-stopped
     ports:
       - "8000:8000"
     environment:
